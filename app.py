@@ -42,6 +42,7 @@ def main():
             l.append(y)
         car_dict[x]=l
 
+
     brand = st.selectbox("Brand", data['Brand'].sort_values().unique())
     model = st.selectbox("Model", sorted(car_dict[brand]))
     city = st.selectbox('City', data['City'].sort_values().unique())
