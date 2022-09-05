@@ -24,7 +24,7 @@ def predict_car_price(city,brand,model,year,body,color,engine_power,fuel_type,mi
     df = pd.DataFrame(data=query, index=np.arange(len(query)), columns=["City", "Brand", "Model", "Year", "Body", "Color", 
                 "Engine_Power", "Fuel_Type", "Mileage", "Gearbox", "Transmission", "New"])
     prediction=pipe.predict(df)
-    st.title(f'The predicted price is {prediction[0]} AZN')
+    st.title(f'The Estimated Price is {prediction[0]} AZN')
     return prediction
 
 
